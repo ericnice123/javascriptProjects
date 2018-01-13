@@ -16,6 +16,9 @@ ul {
 
 body {
     font-family: Roboto;
+    background: #9D50BB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6E48AA, #9D50BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 li {
@@ -36,6 +39,7 @@ input {
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
     color: #2980b9;
+    border: 3px solid rgba(0, 0, 0, 0);
 }
 
 input:focus {
@@ -54,4 +58,23 @@ input:focus {
 .completed {
     color: gray;
     text-decoration: line-through;
+}
+
+.fa-plus {
+    float: right;
+}
+
+span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 40px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+}
+
+li:hover span {
+    width: 40px;
+    transition: 0.2s linear;
 }
